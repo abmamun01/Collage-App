@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_Home">
+
+    <fragment android:id="@+id/navigation_Home"
+        android:name="com.mamunsproject.awesomecollege_user_app.Ui.Home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home"/>
+
+
+    <fragment android:id="@+id/navigation_Notice"
+        android:name="com.mamunsproject.awesomecollege_user_app.Ui.Notice.NoticeFragment"
+        android:label="Notice"
+        tools:layout="@layout/fragment_notice"/>
+
+
+    <fragment android:id="@+id/navigation_Faculty"
+        android:name="com.mamunsproject.awesomecollege_user_app.Ui.Faculty.Faculty_Fragment"
+        android:label="Faculty"
+        tools:layout="@layout/fragment_faculty_"/>
+
+
+    <fragment android:id="@+id/navigation_Gallery"
+        android:name="com.mamunsproject.awesomecollege_user_app.Ui.Gallery.GalleryFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_gallery"/>
+
+
+    <fragment android:id="@+id/navigation_About"
+        android:name="com.mamunsproject.awesomecollege_user_app.Ui.About.About_Fragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_about_"/>
+
+
+</navigation>

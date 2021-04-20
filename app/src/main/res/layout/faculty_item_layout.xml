@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:paddingLeft="12dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/teacherName"
+                android:text="Shubham Pandey"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/title_size"
+                android:fontFamily="@font/roboto_medium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/teacherPost"
+                android:text="Prinicipal"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/title_size"
+                android:fontFamily="@font/roboto_medium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/teacherEmail"
+                android:text="shubhampsnfrydjhbkjr@gmail.com"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size"
+                android:fontFamily="@font/roboto_medium"/>
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/teacherImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_teacher"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

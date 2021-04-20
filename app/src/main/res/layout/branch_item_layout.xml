@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="@dimen/text_margin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_computer_24"
+                android:layout_marginEnd="@dimen/text_margin"
+                android:id="@+id/branchIcon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:fontFamily="@font/arbutus_slab"
+                android:text="Branch"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/title_size"
+                android:textStyle="normal"
+                android:id="@+id/branchTitle"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/about_collage"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="@dimen/text_margin"
+            android:textStyle="normal"
+            android:id="@+id/branchDescription"/>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

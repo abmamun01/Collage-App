@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M26,52a3,3 0,1 0,3 3A3,3 0,0 0,26 52ZM26,56a1,1 0,1 1,1 -1A1,1 0,0 1,26 56Z"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M60,21L58,21L58,20a1,1 0,0 0,-1 -1L45.56,19a1.016,1.016 0,0 0,-0.77 0.35l-0.79,0.93L44,8a6,6 0,0 0,-6 -6L14,2A6,6 0,0 0,8 8L8,19L6,19a1,1 0,0 0,-1 1L5,35L3,35a0.977,0.977 0,0 0,-0.89 0.55A1,1 0,0 0,2.2 36.6L8,44.33L8,56a6,6 0,0 0,6 6L38,62a6,6 0,0 0,6 -6L44,45L60,45a2.006,2.006 0,0 0,2 -2L62,23A2.006,2.006 0,0 0,60 21ZM9,42.33 L5,37L6,37a1,1 0,0 0,1 -1L7,21h4L11,36a1,1 0,0 0,1 1h1ZM42,40.58 L41.29,39.46a1,1 0,0 0,-0.85 -0.46L30,39L30,21h9.98L42,23.37ZM30,41h9.9l1.27,2L26,43L26,23h2L28,39A2.006,2.006 0,0 0,30 41ZM42,20.28l-0.79,-0.93a1.016,1.016 0,0 0,-0.77 -0.35L29,19a1,1 0,0 0,-1 1v1L26,21a2.006,2.006 0,0 0,-2 2L24,43a2.006,2.006 0,0 0,2 2L42,45L42,56a4,4 0,0 1,-4 4L14,60a4,4 0,0 1,-4 -4L10,44.33l5.8,-7.73a1,1 0,0 0,0.09 -1.05A0.977,0.977 0,0 0,15 35L13,35L13,20a1,1 0,0 0,-1 -1L10,19L10,8a4,4 0,0 1,4 -4L38,4a4,4 0,0 1,4 4ZM44,40.58L44,23.37L46.02,21L56,21L56,39L45.56,39a1,1 0,0 0,-0.85 0.46ZM60,43L44.83,43l1.27,-2L57,41a1,1 0,0 0,1 -1L58,23h2Z"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M34,25h4a1,1 0,0 0,0 -2H34a1,1 0,0 0,0 2Z"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M39,27H34a1,1 0,0 0,0 2h5a1,1 0,0 0,0 -2Z"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M39,31H34a1,1 0,0 0,0 2h5a1,1 0,0 0,0 -2Z"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M39,35H34a1,1 0,0 0,0 2h5a1,1 0,0 0,0 -2Z"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M50,29a1,1 0,0 0,-1 1v6a1,1 0,0 0,2 0V30A1,1 0,0 0,50 29Z"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M50,25m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"/>
+</vector>
