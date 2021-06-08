@@ -1,14 +1,16 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">AwesomeCollege_User_App</string>
+    <string name="app_name">GNBC</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
     <string name="start">Start</string>
     <string name="close">Close</string>
+    <string name="home_text">মাননীয় আলহাজ নজরুল ইসলাম বাবু  মহোদয়ের কল্যাণে গোপালদি নজরুল ইসলাম বাবু কলেজ আড়াইহাজারের বুকে প্রতিষ্ঠা হয়। এটি প্রতিষ্ঠিত হয় ২০১০ সালে।এই কলেজটি তার ছাত্রদের জন্য দুর্দান্ত এবং ব্যতিক্রমী শিক্ষা প্রদান করে খ্যাতি অর্জন করেছে।   গোপালদি নজরুল ইসলাম বাবু কলেজে আড়াইহাজারের অন্নতম মান্সম্পন্ন কলেজ। প্রতি বছর ই আমাদের শিক্ষার্থীরা অর্জন করে থাকে বিভিন্ন পুরস্কার। আমাদের শিক্ষকগণ শিক্ষার্থীদের জন্য তাদের সরবচ্চ দিয়ে চেষ্টা করে যাতে শিক্ষার্থীদের কোন প্রকার শিক্ষার কমতি না থাকে </string>
 
 
-    <string name="about_collage">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="about_collage">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</string>
+    <string name="about_collage2">শিক্ষার মান প্রতিটি শিক্ষার্থীর মাঝে সমান ভাবে বিতরনের জন্য আমাদের অভিভাবকদের শিক্ষার্থী সম্পর্কে অধিক সচেতন হতে হবে।   আমাদের উদ্দেশ্য হচ্ছে প্রতিটি অভিভাবক কে তার সন্তান সম্পর্কে অবিহিত করা ।</string>
 
 
     <string-array name="theme">
@@ -16,5 +18,10 @@
         <item>System Default</item>
         <item>Dark</item>
         <item>Light</item>
+
     </string-array>
+
+    <string name="title_activity_maps">Map</string>
+
+
 </resources>

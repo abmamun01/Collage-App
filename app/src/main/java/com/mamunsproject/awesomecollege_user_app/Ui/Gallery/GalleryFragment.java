@@ -83,7 +83,6 @@ public class GalleryFragment extends Fragment {
                         String data = (String) snapshot.getValue();
                         imageList.add(data);
                     }
-
                 }
 
                 adapter = new GalleryAdapter(getContext(), imageList);

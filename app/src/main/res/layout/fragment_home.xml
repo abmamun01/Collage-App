@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     tools:context=".Ui.Home.HomeFragment">
 
 
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,7 +22,7 @@
             <com.smarteist.autoimageslider.SliderLayout
                 android:id="@+id/slider"
                 android:layout_width="match_parent"
-                android:layout_height="250dp" />
+                android:layout_height="@dimen/_200mdp" />
 
 
             <TextView
@@ -29,22 +32,22 @@
                 android:layout_marginHorizontal="@dimen/text_margin"
                 android:layout_marginTop="@dimen/text_margin"
                 android:fontFamily="@font/arbutus_slab"
-                android:text="The Gpa Tall"
+                android:text="আমাদের লক্ষ্য ও উদ্দেশ্য"
                 android:textColor="@color/text_color"
                 android:textSize="@dimen/title_size"
                 android:textStyle="normal" />
 
 
-            <TextView
+            <com.uncopt.android.widget.text.justify.JustifiedTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/text_margin"
                 android:layout_marginTop="36dp"
                 android:fontFamily="@font/roboto"
-                android:text="@string/about_collage"
+                android:text="@string/home_text"
                 android:textColor="@color/text_color"
-                android:textSize="@dimen/text_size"
-                android:layout_margin="@dimen/text_margin"
+                android:textSize="@dimen/_11font_mdp"
                 android:textStyle="normal" />
 
             <LinearLayout
@@ -69,12 +72,10 @@
                         android:layout_marginHorizontal="@dimen/text_margin"
                         android:layout_marginTop="@dimen/text_margin"
                         android:fontFamily="@font/arbutus_slab"
-                        android:text="Department"
+                        android:text="বিভাগ সমুহ"
                         android:textColor="@color/white"
                         android:textSize="@dimen/title_size"
                         android:textStyle="normal" />
-
-
 
 
                 </LinearLayout>
@@ -82,26 +83,29 @@
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:layout_margin="@dimen/text_margin">
+                    android:layout_margin="@dimen/text_margin"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginTop="16dp">
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
+                        android:background="@color/white"
 
-                        android:background="@color/white">
+                        android:orientation="vertical">
 
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
+                            android:layout_margin="8dp"
                             android:layout_marginHorizontal="@dimen/text_margin"
                             android:layout_marginTop="@dimen/text_margin"
                             android:fontFamily="@font/arbutus_slab"
-                            android:text="Computer Science"
-                            android:layout_margin="8dp"
+                            android:text="বিজ্ঞান বিভাগ"
                             android:textColor="@color/text_color"
                             android:textSize="@dimen/title_size"
                             android:textStyle="normal" />
@@ -111,26 +115,25 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
+                            android:layout_margin="8dp"
                             android:layout_marginHorizontal="@dimen/text_margin"
                             android:layout_marginTop="@dimen/text_margin"
                             android:fontFamily="@font/arbutus_slab"
-                            android:text="Computer Science"
-                            android:layout_margin="8dp"
+                            android:text="বাবস্যাহিক শিক্ষা বিভাগ"
                             android:textColor="@color/text_color"
                             android:textSize="@dimen/title_size"
                             android:textStyle="normal" />
-
 
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
+                            android:layout_margin="8dp"
                             android:layout_marginHorizontal="@dimen/text_margin"
                             android:layout_marginTop="@dimen/text_margin"
                             android:fontFamily="@font/arbutus_slab"
-                            android:text="Computer Science"
-                            android:layout_margin="8dp"
+                            android:text="মানবিক বিভাগ"
                             android:textColor="@color/text_color"
                             android:textSize="@dimen/title_size"
                             android:textStyle="normal" />
@@ -138,12 +141,12 @@
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/text_margin"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="@dimen/_12mdp"
+                android:background="@color/blue_grey_50">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -152,51 +155,55 @@
                     android:layout_marginHorizontal="@dimen/text_margin"
                     android:layout_marginTop="@dimen/text_margin"
                     android:fontFamily="@font/arbutus_slab"
-                    android:text="Contact Details"
-                    android:textColor="@color/text_color"
+                    android:text="যোগাযোগ ও ঠিকানা"
+                    android:textColor="@color/textColor2"
                     android:textSize="@dimen/title_size"
                     android:textStyle="normal" />
 
 
-
                 <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="26dp"
-                        android:fontFamily="@font/roboto"
-                        android:text="Collage Name"
-                        android:textColor="@color/text_color"
-                        android:textSize="@dimen/text_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="26dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="গোপালদি নজরুল ইসলাম বাবু কলেজ"
+                    android:textColor="@color/textColor2"
+                    android:textSize="@dimen/text_size"
 
-                        android:textStyle="normal" />
-
+                    android:textStyle="normal" />
 
 
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="আড়াইহাজার, নারায়াঙ্গঞ্জ"
+                    android:textColor="@color/textColor2"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="normal" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="8dp">
+                    <ImageView
+                        android:id="@+id/map"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="1dp"
-                        android:fontFamily="@font/roboto"
-                        android:text="Araihazar, Narayangonj"
-                        android:textColor="@color/text_color"
-                        android:textSize="@dimen/text_size"
-                        android:layout_margin="@dimen/text_margin"
-                        android:textStyle="normal" />
+                        android:layout_height="@dimen/_190mdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/map" />
 
 
-<ImageView
-    android:layout_width="wrap_content"
-    android:layout_height="230dp"
-    android:src="@drawable/location"
-    android:id="@+id/map"/>
-
+                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
         </LinearLayout>
 
 
-
     </ScrollView>
-</FrameLayout>
+</RelativeLayout>

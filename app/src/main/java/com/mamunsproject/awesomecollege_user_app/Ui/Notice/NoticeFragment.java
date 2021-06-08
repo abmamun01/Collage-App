@@ -73,7 +73,7 @@ public class NoticeFragment extends Fragment {
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
                 progressBar.setVisibility(View.GONE);
-                Toast.makeText(getContext(),error.getMessage(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(),error.getMessage(),Toast.LENGTH_SHORT).show();
             }
         });
     }

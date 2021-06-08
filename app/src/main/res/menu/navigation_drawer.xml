@@ -2,46 +2,52 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
+    <item
+        android:id="@+id/navigation_Ebook"
+        android:icon="@drawable/ic_ebook"
+        android:title="ই-বুক" />
 
-    <item android:id="@+id/navigation_Ebook"
-        android:title="Ebook"
-        android:icon="@drawable/ic_ebook"/>
-
-    <item android:id="@+id/Theme"
-        android:title="Theme"
-        android:icon="@drawable/ic_about"/>
-
-
-    <item android:id="@+id/navigation_Videoss"
-        android:title="Videos"
-        android:icon="@drawable/youtube"/>
+    <item
+        android:id="@+id/Theme"
+        android:icon="@drawable/ic_about"
+        android:title="থিম" />
 
 
-
-        <item android:id="@+id/navigation_websites"
-        android:title="Website"
-        android:icon="@drawable/websitte"/>
-
-
-        <item android:id="@+id/navigation_share"
-        android:title="Share"
-        android:icon="@drawable/ic_ebook"/>
+    <item
+        android:id="@+id/navigation_Videoss"
+        android:icon="@drawable/youtube"
+        android:title="ভিডিও" />
 
 
-        <item android:id="@+id/navigation_rate"
-        android:title="Rate"
+    <item
+        android:id="@+id/navigation_websites"
+        android:icon="@drawable/websitte"
+        android:title="আমাদের ওয়েবসাইট" />
 
-        android:icon="@drawable/ic_about"/>
+
+    <item
+        android:id="@+id/navigation_share"
+        android:icon="@drawable/ic_ebook"
+        android:title="শেয়ার করুন" />
 
 
-        <item android:id="@+id/navigation_developer"
-        android:title="Developer"
-        android:icon="@drawable/developer"/>
+    <item
+        android:id="@+id/navigation_color"
+        android:icon="@drawable/ic_color"
+        android:title="Color" />
 
-    <item android:id="@+id/navigation_color"
-        android:title="Color"
-        android:icon="@drawable/ic_color"/>
 
+    <item
+        android:id="@+id/navigation_rate"
+        android:icon="@drawable/ic_about"
+
+        android:title="Rate" />
+
+
+    <item
+        android:id="@+id/navigation_developer"
+        android:icon="@drawable/developer"
+        android:title="Developer" />
 
 
 </menu>

@@ -5,6 +5,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
@@ -37,18 +38,29 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
-    private int checkedItem;
+  //  private int checkedItem;
     private String selected;
+    private Toolbar toolbar;
 
 
-    private final String CHECKEDITEM="checked item";
+   // private final String CHECKEDITEM="checked item";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-        sharedPreferences=this.getSharedPreferences("themes", Context.MODE_PRIVATE);
+        setContentView(R.layout.activity_main);
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
+        toolbar=findViewById(R.id.toolbarID);
+
+        toolbar.setTitle("GNBC");
+        toolbar.setTitleTextColor(getResources().getColor(R.color.black));
+        setSupportActionBar(toolbar);
+
+
+
+       /* sharedPreferences=this.getSharedPreferences("themes", Context.MODE_PRIVATE);
         editor=sharedPreferences.edit();
 
 
@@ -72,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                 break;
         }
-
+*/
         init();
         clickListener();
 
@@ -151,15 +163,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Toast.makeText(getApplicationContext(), "Developer", Toast.LENGTH_SHORT).show();
                 break;
 
-          case R.id.navigation_color:
+     /*     case R.id.navigation_color:
     
               showDialog();
-                break;
+                break;*/
         }
         return true;
     }
 
-    private void showDialog() {
+  /*  private void showDialog() {
 
        final String[] theme=this.getResources().getStringArray(R.array.theme);
 
@@ -170,7 +182,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             public void onClick(DialogInterface dialog, int which) {
 
                 selected=theme[which];
-                checkedItem=which;
+                //checkedItem=which;
 
             }
         });
@@ -221,7 +233,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         AlertDialog dialogs=builder.create();
         dialogs.show();
     }
-
+*/
+/*
     private int getCheckedItem(){
 
         return  sharedPreferences.getInt(CHECKEDITEM,0);
@@ -232,6 +245,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         editor.putInt(CHECKEDITEM,i);
         editor.apply();
     }
+*/
 
 
     @Override

@@ -3,17 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Ui.Gallery.GalleryFragment">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/text_margin"
+        android:padding="@dimen/_9mdp"
         android:orientation="vertical">
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_marginVertical="8dp"
-            android:layout_height="280dp">
+            app:cardElevation="5dp"
+            app:cardCornerRadius="3dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_height="@dimen/_240mdp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -24,7 +29,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Convocation"
+                    android:text="উৎসব"
                     android:layout_marginTop="@dimen/text_margin"
                     android:textSize="@dimen/title_size"
                     android:layout_gravity="center_horizontal"
@@ -50,7 +55,11 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_marginVertical="8dp"
-            android:layout_height="280dp">
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_height="@dimen/_240mdp"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="6dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -61,7 +70,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Others"
+                    android:text="অন্যান্য"
                     android:layout_marginTop="@dimen/text_margin"
                     android:textSize="@dimen/title_size"
                     android:layout_gravity="center_horizontal"
